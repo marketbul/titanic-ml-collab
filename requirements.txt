@@ -1,0 +1,12 @@
+pandas
+numpy
+scikit-learn
+matplotlib
+seaborn
+jupyter
+pytest
+ruff
+pre-commit
+nbstripout
+jupytext
+dvc
