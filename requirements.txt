@@ -1,12 +1,13 @@
-pandas
-numpy
-scikit-learn
-matplotlib
-seaborn
-jupyter
-pytest
-ruff
-pre-commit
-nbstripout
-jupytext
-dvc
+@"
+pandas==3.0.2
+numpy==2.4.4
+scikit-learn==1.8.0
+matplotlib==3.11.2
+seaborn==0.13.2
+pytest==9.1.1
+jupytext==1.19.5
+ruff==0.16.10
+pre-commit==4.6.2
+nbstripout==0.9.1
+dvc==3.67.1
+"@ | Set-Content requirements.txt
