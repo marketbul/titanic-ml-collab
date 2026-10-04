@@ -59,3 +59,5 @@ The project will use:
 ## Status
 
 Project setup in progress.
+
+CI test
