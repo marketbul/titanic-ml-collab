@@ -37,4 +37,4 @@ jobs:
           test -f data/raw/titanic.csv.dvc
 
       - name: Smoke train
-        run: python src/prepare.py
+        run: python src/load_data.py
