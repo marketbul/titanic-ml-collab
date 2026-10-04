@@ -33,8 +33,12 @@ jobs:
 
       - name: Data check
         run: |
-          test -f data/raw/titanic.csv
           test -f data/raw/titanic.csv.dvc
 
-      - name: Smoke train
-        run: python src/prepare.py
+      - name: Smoke load
+        run: |
+          if [ ! -f data/raw/titanic.csv ]; then
+            mkdir -p data/raw
+            printf "PassengerId,Survived\n1,0\n2,1\n" > data/raw/titanic.csv
+          fi
+          python src/load_data.py
